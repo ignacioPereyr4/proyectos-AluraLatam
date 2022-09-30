@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PROGRAMA HTML</title>
+    <h1>PROGRAMA Juego de Adivinación</h1>
+</head>
+</head>
+<body>
+    <meta charset="UFT-8">
+    
+</body>
+</html>
+<script>
+
+    function saltarlinea() {
+
+        document.write("<br><br>");
+
+    }
+
+    function imprimir (frase) {
+
+        document.write(frase);
+        saltarlinea();
+
+    }
+    
+    var numeroPensado = Math.round(Math.random()*10); //se usa para mandarles numeros enteros.
+    var intentos = 3
+    var contador = 1;
+    
+
+    
+
+    while (contador <= intentos) {
+
+        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+        if(numeroPensado == numeroLanzado) {
+
+            alert ("usted acertó, en el intento " + intentos + " el numero pensado era " + numeroPensado);
+            break;
+
+
+        }
+
+
+        else {
+
+           alert("usted erró");
+        
+
+        }
+        contador++
+
+    }
+
+    if(numeroPensado == numeroLanzado) {
+
+        imprimir ("usted acertó, en el intento " + contador + " el numero pensado era " + numeroPensado);
+        
+
+    }
+
+
+    else {
+
+        imprimir("usted erró, el numero pensado era" + numeroPensado );
+
+
+
+
+        imprimir ("Fin")
+    }
+
+</script>

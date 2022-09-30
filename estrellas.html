@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PROGRAMA HTML</title>
+    <h1>PROGRAMA Juego de Adivinación</h1>
+</head>
+</head>
+<body>
+    <meta charset="UFT-8">
+    
+</body>
+</html>
+<script>
+
+    function saltarlinea() {
+
+        document.write("<br><br>");
+
+    }
+
+    function imprimir (frase) {
+
+        document.write(frase);
+        saltarlinea();
+
+    }
+
+    for (var lineas = 1; lineas <= 3; lineas++){
+        for (var columnas = 1; columnas <= 10; columnas++){
+
+            document.write("*");
+
+        }    
+        saltarlinea();
+        
+    }
+    saltarlinea();
+    saltarlinea();
+
+    imprimir("Fin");
+
+
+</script>

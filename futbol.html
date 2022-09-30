@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PROGRAMA HTML</title>
+    <h1>PROGRAMA PARA CALCULAR LOS PUNTOS DE UN EQUIPO DE FUTBOL</h1>
+</head>
+</head>
+<body>
+    <meta charset="UFT-8">
+    
+</body>
+</html>
+<script>
+
+    function saltarlinea() {
+
+        document.write("<br><br>");
+
+    }
+
+    function imprimir (frase) {
+
+        document.write(frase);
+        saltarlinea();
+
+    }
+
+    var victorias = parseInt(prompt("informe la cantidad de victorias"));
+    var empates = parseInt(prompt("informe la cantidad de empates"));
+
+    var  puntosTotal = (victorias * 3) + empates;
+    
+    //imprimir("El total de puntos del equipo es: " + puntosTotal);
+
+    if (puntosTotal > 28) {
+    
+        imprimir ("El equipo está mejor que el año pasado");
+
+    }
+
+    if (puntosTotal < 28) {
+
+        imprimir ("El equipo está peor que el año pasado");
+    }
+
+    if (puntosTotal == 28){
+
+        imprimir ("El equipo está igual que el año pasado");
+    }
+
+
+    // para que calcule muchos calculos diferentes para el equipo de futbol se tendra que usar el <> (seria mayor y menor)
+    //para que la funcion diga si tenemos que usar el modo (if) con{} importante y para usar igual hay que colocarlo 2 veces (==)
+    // la funcion if hace si hacemos una funcion de verdadero y falso lo analizará y dara la respuesta correcta
+</script>
